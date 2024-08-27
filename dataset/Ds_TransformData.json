@@ -1,0 +1,16 @@
+{
+	"name": "Ds_TransformData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Ass_Db",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "prep",
+			"table": "TransformData"
+		}
+	}
+}
