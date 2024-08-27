@@ -1,5 +1,5 @@
 {
-	"name": "Order",
+	"name": "Ds_OrderDataInput",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_Ablb_Input",

@@ -1,5 +1,5 @@
 {
-	"name": "Ds_OrderDataOutput",
+	"name": "Ds_CustomerDataOutput",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_Ablb_Input",
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Order.csv",
-				"folderPath": "Order",
+				"fileName": "Customer.csv",
+				"folderPath": "Customer",
 				"container": "container"
 			},
 			"columnDelimiter": ",",
@@ -20,6 +20,5 @@
 			"quoteChar": "\""
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
