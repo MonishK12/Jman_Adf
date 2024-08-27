@@ -1,0 +1,9 @@
+{
+	"name": "mkdatafactory25",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8938f605-b43d-44d7-b464-2ec226a79f54",
+		"tenantId": "2800c0a0-70e9-49be-8733-faeaa6aced99"
+	}
+}

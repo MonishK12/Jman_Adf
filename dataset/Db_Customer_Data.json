@@ -1,0 +1,17 @@
+{
+	"name": "Db_Customer_Data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Ass_Store",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "Raw",
+			"table": "Customer"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

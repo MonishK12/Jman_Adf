@@ -1,0 +1,46 @@
+{
+	"name": "Ds_Ablb_Order1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Ablb_Input",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Orders"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "240824_orderdetails.xlsx",
+				"container": "input"
+			}
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,25 @@
+{
+	"name": "CustomerData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Ablb_Input",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "data_74938b1e-7470-4e0c-8b3c-6027512a226c_47b48616-77bd-496f-95e0-62b4387c7bd7.csv",
+				"folderPath": "Customer",
+				"container": "container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
