@@ -1,0 +1,16 @@
+{
+	"name": "ds_sqldb_order",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Ass_Db",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "raw",
+			"table": "Order"
+		}
+	}
+}
