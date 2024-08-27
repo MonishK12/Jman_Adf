@@ -22,9 +22,6 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "join1"
-				},
-				{
 					"name": "exists1"
 				}
 			],
@@ -58,12 +55,7 @@
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     format: 'table') ~> source1",
-				"DfOrderData, source1 join(DfOrderData@CustomerID == source1@CustomerID,",
-				"     joinType:'inner',",
-				"     matchType:'exact',",
-				"     ignoreSpaces: false,",
-				"     broadcast: 'auto')~> join1",
-				"join1 exists(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"DfOrderData, source1 exists(DfOrderData@CustomerID == source1@CustomerID,",
 				"     negate:false,",
 				"     broadcast: 'auto')~> exists1"
 			]
