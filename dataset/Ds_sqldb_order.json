@@ -1,5 +1,5 @@
 {
-	"name": "ds_sqldb_order",
+	"name": "Ds_sqldb_order",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Ls_Ass_Db",

@@ -54,7 +54,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_sqldb_customer",
+						"referenceName": "Ds_sqldb_customer",
 						"type": "DatasetReference"
 					}
 				]
@@ -111,7 +111,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_sqldb_order",
+						"referenceName": "Ds_sqldb_order",
 						"type": "DatasetReference"
 					}
 				]
@@ -155,7 +155,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_sqldb_customer",
+						"referenceName": "Ds_sqldb_customer",
 						"type": "DatasetReference"
 					}
 				],
@@ -165,6 +165,22 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "CleanOrderData",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
 			}
 		],
 		"annotations": []
